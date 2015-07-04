@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>My web site</title>
+    	<link rel="stylesheet" href="style.css">
+    </head>
+<body lang='ru'>
+<!--
+1.Why heder img is bcg to body? It is bcg to header
+2.Repait button margins (margin:auto)
+3. header article why you use text-align:center; (your parent have this style too)
+4. 
+-->
+    <header id="head">
+      <div class="main-label">Golden</div>
+        <nav>
+        	<a href="#head">HOME</a><!--must be li-->
+        	<a href="#serv">SERVICES</a>
+        	<a href="#port">PORTFOLIO</a>
+        	<a href="#about">ABOUT</a>
+        	<a href="#">CONTACT</a>
+        </nav>
+        <article>Welcome To Our Studio!</article><!--h1 to h6-->
+        <section>IT'S NICE TO MEET YOU</section> <!--Not Upper case it must be css 'text-transform: uppercase;'-->
+        <div class="mainbutton">
+          <div class="center">
+            <a class="mainbutton" href="#">TELL ME MORE</a>
+          </div>
+        </div>        
+    </header>
+    <section class="services" id="serv">
+      <article>SERVICES</article><!--h1 to h6-->
+      <p>Proin iaculis purus consequat sem cure.</p><!--good in some case must be h1 to h6-->
+	     <table><!--don*t use table, table is in past-->
+		    <tr>
+      		<td><img src="img/E-Commerce.png" alt="E-Commerce"/></td>
+      		<td><img src="img/Responsive Web.png" alt="Responsive Web"/></td>
+      		<td><img src="img/Web Security.png" alt="Web Security"/></td>
+		    </tr>
+    		<tr>
+    		  <th>E-Commerce</th>
+          <th>Responsive Web</th>
+          <th>Web Security</th>
+    		</tr>
+		    <tr>
+      		<td>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+          </td>
+  		    <td>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+          </td>
+  		    <td>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+          </td>
+		    </tr>
+	     </table>
+    </section>
+    <section class="our-portfolio" id="port"> <!--can use name="port"-->
+      <article class="our-portfolio">OUR PORTFOLIO</article>
+      <p>Proin iaculis purus consequat sem cure.</p>
+      <!-- 
+      1. if you want padding-top to all your elements, you can put it in one div, and dont use padding-top: 80px; for all elements
+      2. and at first element dont do so big padding-top: 80px;, but all elemenets in 1 div and add css to this div
+      3. Why you put your image in div?
+      4. If you have some text which is not h1-h6, you can use <span></span>
+      5. 
+      -->
+      <section class="inside-hard">
+        <div>
+          <img src="img/Ebony & Ivory.png"/>
+        </div>
+        <a href="#"><div class="inside">Ebony & Ivory</div></a>
+        <div class="little-font">Branding</div>
+      </section>
+      <section class="inside">
+        <div>
+          <img src="img/Smart Stationary.png"/>
+        </div>
+        <a href="#"><div class="inside">Smart Stationary</div></a>
+        <div class="little-font">Print Design</div>
+      </section>
+      <section class="inside">
+        <div>
+          <img src="img/Clever Poster.png"/>
+        </div>
+        <a href="#"><div class="inside">Clever Poster</div></a>
+        <div class="little-font">Print Design</div>
+      </section>
+    </section>
+    <section class="about-us" id="about">
+      <article>ABOUT US</article>
+      <P>Proin iaculis purus consequat sem cure.</P>
+    </section>
+</body>
+</html>
